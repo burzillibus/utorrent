@@ -19,7 +19,7 @@ jobs:
           install: true
       - 
         name: Build
-        run: docker build . --file Dockerfile --tag utorrent:$(date +%s)
+        run: docker build . --tag utorrent:$(date +%s)
       - 
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
