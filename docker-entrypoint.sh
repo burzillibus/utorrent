@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo -e "Configuring ${WORKINGDIR}/utserver.conf\n"
 sed -i "s=\$UI_PORT=$UI_PORT=g" ${WORKINGDIR}/utserver.conf
 sed -i "s=\$COMPLETED_FOLDER=$COMPLETED_FOLDER=g" ${WORKINGDIR}/utserver.conf
