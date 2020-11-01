@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  web:
+    image: utorrent:latest
+    container_name: utorrent
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./autoload:/var/utorrent/autoload
+      - ./completed:/var/utorrent/completed
+      - ./settings:/var/log/utorrent
+
+# version: "3.7"
+# services:
+#   utorrent:
+#     image: "dbarton/utorrent"
+#     container_name: "utorrent"
+#     volumes:
+#       - "./settings:/settings"
+#       - "./media:/media"
+#     ports:
+#       - "8082:8080"
+#       - "6881:6881"
+#     restart: always
