@@ -30,13 +30,4 @@ jobs:
           #   arg2=value2
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
-  # build:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@master
-  #   - name: Publish to Docker Repository
-  #     uses: elgohr/Publish-Docker-Github-Action@master
-  #     with:
-  #       name: ispeakcode/docker-githubaction
-  #       username: ${{ secrets.DOCKER_USERNAME }}
-  #       password: ${{ secrets.DOCKER_PASSWORD }}
+  
