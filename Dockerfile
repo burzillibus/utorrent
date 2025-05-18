@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM --platform=linux/arm64/v8 ubuntu:18.04
 
 LABEL MANTAINER: vincenzo.man@gmail.com
 
