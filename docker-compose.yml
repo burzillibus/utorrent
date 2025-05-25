@@ -1,7 +1,7 @@
-# version: "3.7"
 
 services:
   web:
+    platform: linux/x86_64
     image: vincenteat/utorrent:latest
     container_name: utorrent
     ports:
