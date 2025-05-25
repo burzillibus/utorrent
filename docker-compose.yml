@@ -1,4 +1,4 @@
-version: "3.7"
+# version: "3.7"
 
 services:
   web:
@@ -7,6 +7,6 @@ services:
     ports:
       - "8082:8080"
     volumes:
-      - ./autoload:/var/utorrent/autoload
-      - ./completed:/var/utorrent/completed
-      - ./settings:/var/log/utorrent
+      - /home/vincenzo/Torrent/autoload:/var/utorrent/autoload
+      - /home/vincenzo/Torrent/completed:/var/torrent/completed
+      - /home/vincenzo/Torrent/conf/settings.dat:/opt/utorrent-server-alpha-v3_3/settings.dat
